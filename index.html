@@ -17,6 +17,7 @@
         <li><a href="#">Instalacja</a></li>
         <li><a href="#">Jak to działa?</a></li>
         <li><a href="#"><i class="fab fa-github"></i> Źródło</a></li>
+        <li><a href="#" id="download">Pobierz</a></li>
     </ul>
 
     <div class="burger">
@@ -48,24 +49,27 @@
     <h1><u>Przedstawiamy</u> samorozwiązujące się quizy!</h1>
     <div class="quiz-and-devil">
         <div class="content-quiz">
+            <div class="dlc-full">
+                <div class="dlc-wrapper">
+                    <div class="button-wrapper">
+                        <!-- jeżeli jest obrazek -->
+                        <button type="button" id="button_doom_id">Pokaż obrazek</button>
+                        <!-- end -->
+                        <a href="#" class="black-on-hover"> Link do <strong>kodu HTML</strong></a>
+    <!--                </div>-->
 
-            <div class="dlc-wrapper">
-                <div class="button-wrapper">
+                    </div>
                     <!-- jeżeli jest obrazek -->
-                    <button type="button" id="button_doom_id">Pokaż obrazek</button>
+                    <div class="screen">
+                        <img id="image_doom_id" src="img/screen.png" alt="" class="answer_image">
+                    </div>
                     <!-- end -->
-                    <a href="#" class="black-on-hover"> Link do <strong>kodu HTML</strong></a>
-<!--                </div>-->
-
                 </div>
-                <!-- jeżeli jest obrazek -->
-                <img id="image_doom_id" src="img/screen.png" alt="" class="answer_image">
-                <!-- end -->
 
-            </div>
-            <div class="black expand">
-                Fałsz
-            </div>
+                <div class="black expand">
+                    Fałsz
+                </div>
+        </div>
             <div class="quiz">
 
                 <p>Metoda Saruusa służy do obliczania wyznacznika drugiego i trzeciego stopnia</p>
@@ -83,25 +87,6 @@
         <div class="devil">
             <span class="devil-talk">Rozwiąż to!</span>
             <img src="img/devil/devil1.png" class="devil-img" alt="devil1">
-
-<!--            <div class="fire">-->
-<!--                <div class="fire-left">-->
-<!--                    <div class="main-fire"></div>-->
-<!--                    <div class="particle-fire"></div>-->
-<!--                </div>-->
-<!--                <div class="fire-main">-->
-<!--                    <div class="main-fire"></div>-->
-<!--                    <div class="particle-fire"></div>-->
-<!--                </div>-->
-<!--                <div class="fire-right">-->
-<!--                    <div class="main-fire"></div>-->
-<!--                    <div class="particle-fire"></div>-->
-<!--                </div>-->
-<!--                <div class="fire-bottom">-->
-<!--                    <div class="main-fire"></div>-->
-<!--                </div>-->
-<!--            </div>-->
-
         </div>
         <div class="mo-fire">
 
@@ -290,7 +275,33 @@
 
 </section>
 
+<section class="how-it-work">
+    <h1>Jak to działa?</h1>
+
+    <div class="container">
+        <div class="description">
+            <h3>Podczas rozwiązywania quizów rozszerzenie automatycznie zapisuje poprawne odpowiedzi</h3>
+            <img src="img/arrow.png" class="arrow" alt="">
+            <h3>Gdy ktoś odwiedzi wcześniej rozwiązany quiz - zostają mu wyświetlone zapisane odpowiedzi</h3>
+            <div class="happy-student-div">
+                <img src="img/happy-student.png" class="happy-student" alt="">
+                <span>Super!</span>
+            </div>
+        </div>
+
+        <div class="img-how-it-work">
+            <img src="img/how-it-works.png" alt="">
+        </div>
+    </div>
+</section>
+
+
 <section class="installation">
+    <h1>Osiągnij spokój umysłu dzięki <u>e-nauczanie DLC</u></h1>
+    <div class="chill">
+        <img src="img/chillpng.png" alt="">
+        <button>Zacznij teraz</button>
+    </div>
 
 </section>
 
