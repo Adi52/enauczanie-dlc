@@ -13,9 +13,9 @@
 <nav>
     <div class="logo"><img src="img/logo.png" alt=""></div>
     <ul>
-        <li><a href="#">Start</a></li>
-        <li><a href="#">Instalacja</a></li>
-        <li><a href="#">Jak to działa?</a></li>
+        <li><a href="#start">Start</a></li>
+        <li><a href="#how-work">Jak to działa?</a></li>
+        <li><a href="#install">Instalacja</a></li>
         <li><a href="#"><i class="fab fa-github"></i> Źródło</a></li>
         <li><a href="#" id="download">Pobierz</a></li>
     </ul>
@@ -31,21 +31,22 @@
     <h1>Masz dość tej uczelni?</h1>
     <img src="img/pg.png" alt="">
     <div class="scroll-down">
-        <i class="fas fa-angle-down"></i>
-        <i class="fas fa-angle-down"></i>
-        <i class="fas fa-angle-down"></i>
-        <p>Scroll</p>
+        <a href="#students">
+            <i class="fas fa-angle-down"></i>
+            <i class="fas fa-angle-down"></i>
+            <i class="fas fa-angle-down"></i>
+        </a>
     </div>
 </section>
 
-<section class="container-students">
+<section class="container-students" id="students">
     <h2>Niezadowolenie studentów w ostatnim czasie:</h2>
-    <h3 class="active">DUŻE!</h3>
+    <h3>DUŻE!</h3>
     <!--    pamiętaj tu dodać kod w js-->
     <img src="img/angry-students.png" class="angry-students" alt="">
 </section>
 
-<section class="container-quiz">
+<section class="container-quiz" id="start">
     <h1><u>Przedstawiamy</u> samorozwiązujące się quizy!</h1>
     <div class="quiz-and-devil">
         <div class="content-quiz">
@@ -89,7 +90,6 @@
             <img src="img/devil/devil1.png" class="devil-img" alt="devil1">
         </div>
         <div class="mo-fire">
-
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="1016px" height="493px" viewBox="0 0 1016 493" enable-background="new 0 0 1016 493" xml:space="preserve">
 <g>
@@ -268,17 +268,18 @@
     c0.994,3.797,1.986,7.59,2.982,11.382c-0.127,5.22-0.251,10.438-0.38,15.66c-5.04,9.903-10.8,19.7-14.889,29.741
     c-3.156,7.76,0.219,14.943,12.113,19.614C963.82,417.971,967.399,461.364,956.425,464.105z"/>
 </svg>
-
-
         </div>
     </div>
 
 </section>
 
-<section class="how-it-work">
+<section class="how-it-work" id="how-work">
     <h1>Jak to działa?</h1>
 
     <div class="container">
+        <div class="img-how-it-work">
+            <img src="img/how-it-works.png" alt="">
+        </div>
         <div class="description">
             <h3>Podczas rozwiązywania quizów rozszerzenie automatycznie zapisuje poprawne odpowiedzi</h3>
             <img src="img/arrow.png" class="arrow" alt="">
@@ -288,22 +289,19 @@
                 <span>Super!</span>
             </div>
         </div>
-
-        <div class="img-how-it-work">
-            <img src="img/how-it-works.png" alt="">
-        </div>
     </div>
 </section>
 
 
-<section class="installation">
+<section class="installation" id="install">
     <h1>Osiągnij spokój umysłu dzięki <u>e-nauczanie DLC</u></h1>
-    <div class="chill">
-        <img src="img/chillpng.png" alt="">
-        <button>Zacznij teraz</button>
-    </div>
-
+    <button>Zacznij teraz</button>
+    <img src="img/chillpng.png" alt="">
 </section>
+
+<footer>
+    <h3>© 2020 Copyright: e-nauczanie DLC </h3>
+</footer>
 
 
 <script src="main.js"></script>

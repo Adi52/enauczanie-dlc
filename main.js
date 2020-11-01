@@ -1,7 +1,7 @@
 const burgerBtn = document.querySelector('.burger');
 const navLinks = document.querySelectorAll('nav ul li');
 
-burgerBtn.addEventListener('click', function () {
+function toggleMenu() {
     document.querySelector('nav ul').classList.toggle('active');
 
     // Animate links
@@ -12,9 +12,13 @@ burgerBtn.addEventListener('click', function () {
             link.style.animation = `navLinkFade .5s ease forwards ${.5 + index / 7}s`;
         }
     })
-
     // Burger animation
     burgerBtn.classList.toggle('toggle');
+}
+
+burgerBtn.addEventListener('click', toggleMenu);
+document.querySelector('nav ul').addEventListener('click', function() {
+    setTimeout(toggleMenu, 200);
 });
 
 
@@ -60,12 +64,22 @@ function angryDevil() {
         document.querySelector('.mo-fire').classList.add('active');
         dlcBtn.style.display = 'none';
     }, 2000);
+}
 
 
+function addClassAfterScroll() {
+    // Add class Active to .container-students h3 after scroll to section container-students
+    const heightScroll = window.scrollY;
+    const containerStudents = document.querySelector('.container-students');
+    const heightContainerStudents = containerStudents.clientHeight;
 
+    if (heightScroll > heightContainerStudents) {
+        document.querySelector('.container-students h3').classList.add('active');
+    }
 
 
 }
 
 
+window.addEventListener('scroll', addClassAfterScroll);
 
